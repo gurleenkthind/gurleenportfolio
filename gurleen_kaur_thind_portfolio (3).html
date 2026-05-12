@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gurleen Kaur Thind | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.7;
+    }
+    a { color: #38bdf8; text-decoration: none; }
+    section { padding: 70px 8%; }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      background: #020617;
+      padding: 12px 10px;
+      border-radius: 30px;
+      z-index: 1000;
+    }
+    .navbar a {
+      font-size: 1.1rem;
+      color: #e5e7eb;
+      transition: 0.3s;
+    }
+    .navbar a:hover { color: #38bdf8; }
+
+    /* Header */
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    header h1 { font-size: 3.2rem; font-weight: 700; }
+    header span { color: #38bdf8; }
+    header p { max-width: 720px; margin: 25px 0; color: #cbd5f5; font-size: 1.05rem; }
+
+    .btn {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 7px 16px;
+      background: #38bdf8;
+      color: #0f172a;
+      border-radius: 18px;
+      font-weight: 500;
+      font-size: 0.82rem;
+      letter-spacing: 0.2px;
+      transition: 0.25s ease;
+    }
+    .btn:hover { opacity: 0.85; }
+    .btn:hover { opacity: 0.85; }
+
+    /* Section titles */
+    h2 { font-size: 2.2rem; margin-bottom: 35px; position: relative; }
+    h2::after {
+      content: '';
+      width: 70px;
+      height: 3px;
+      background: #38bdf8;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+    }
+
+    /* About */
+    .about p { max-width: 900px; color: #dbeafe; }
+
+    /* Skills */
+    .skills span {
+      display: inline-block;
+      background: #1e293b;
+      padding: 10px 18px;
+      border-radius: 20px;
+      margin: 6px;
+      font-size: 0.95rem;
+    }
+
+    /* Projects */
+    .project {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 18px;
+      margin-bottom: 25px;
+    }
+    .project h3 { color: #38bdf8; margin-bottom: 12px; }
+    .project ul { margin-left: 20px; }
+    .project li { margin-bottom: 8px; }
+
+    /* Grid */
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 35px;
+      background: #020617;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.3rem; }
+      section { padding: 55px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="#" title="Home">🏠</a>
+  <a href="#projects" title="Projects">💼</a>
+  <a href="#skills" title="Skills">🛠️</a>
+  <a href="#education" title="Education">🎓</a>
+  <a href="#contact" title="Contact">✉️</a>
+</nav>
+
+<header>
+  <h1>Gurleen Kaur Thind</h1>
+  <p>
+    Aspiring Cloud Engineer with a strong interest in backend development,
+    data visualization, cloud computing, and AI-driven solutions. Focused on building reliable,
+    scalable applications and continuously strengthening problem-solving skills.
+  </p>
+  <div style="display:flex; gap:12px; align-items:center;">
+  <a href="#contact" class="btn">Contact</a>
+  <a href="./Updated%20CV%20Sem6.pdf" class="btn" target="_blank" download>Download CV</a>
+</div>
+</header>
+
+<section class="about">
+  <h2>Professional Summary</h2>
+  <p>
+    I am a Computer Science & Engineering undergraduate at Lovely Professional University with hands-on
+    experience in software development, data analysis, and cloud-based tools. Through academic projects
+    and self-driven learning, I have developed a solid foundation in object-oriented programming,
+    backend development, and data visualization. I am eager to apply my skills in professional
+    environments and contribute to impactful technology-driven solutions.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <span>C++</span><span>Python</span><span>Java</span><span>C</span>
+    <span>MySQL</span><span>Docker</span><span>AWS</span><span>Flask</span>
+    <span>Problem Solving</span><span>Team Collaboration</span><span>Active Listening</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>GUI Based Quiz Application (Java)</h3>
+    <ul>
+      <li>Developed a Java Swing-based desktop quiz application with timed MCQs and instant feedback.</li>
+      <li>Applied object-oriented programming principles for clean and modular design.</li>
+      <li>Implemented accurate scoring logic and timer functionality supporting 20+ questions.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>Smart Home Energy Monitor (Python)</h3>
+    <ul>
+      <li>Built an AI-powered energy monitoring system to track real-time appliance consumption.</li>
+      <li>Visualized daily, weekly, and monthly usage trends using Pandas and Matplotlib.</li>
+      <li>Integrated machine learning models to generate personalized energy-saving recommendations.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>Digital Resume & Portfolio Website</h3>
+    <ul>
+      <li>Designed and developed a responsive personal website using HTML, CSS, and JavaScript.</li>
+      <li>Ensured cross-browser compatibility and smooth performance across devices.</li>
+      <li>Integrated dynamic sections for projects, CV access, and contact forms.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="education" class="two-col">
+  <div>
+    <h2>Education</h2>
+    <p><strong>B.Tech in Computer Science & Engineering</strong><br>
+      Lovely Professional University, Punjab<br>
+      <em>2023 – Present</em></p>
+  </div>
+
+  <div>
+    <h2>Certifications</h2>
+    <ul>
+      <li>Privacy and Security in Online Social Media – NPTEL</li>
+      <li>Master Generative AI & Generative AI Tools – Infosys Springboard</li>
+      <li>Cloud Computing on AWS – Udemy</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    <span style="margin-right:12px;">📧</span>
+    <a href="mailto:Gurleen.thind.k@gmail.com">Gurleen.thind.k@gmail.com</a>
+  </p>
+  <p>
+    <span style="margin-right:12px;">💼</span>
+    <a href="https://www.linkedin.com/in/gurleenkaurthind" target="_blank">linkedin.com/in/gurleenkaurthind</a>
+  </p>
+  <p>
+    <span style="margin-right:12px;">💻</span>
+    <a href="https://github.com/gurleenkthind" target="_blank">github.com/gurleenkthind</a>
+  </p>
+</section>
+
+<footer>
+  © 2026 Gurleen Kaur Thind | Designed & Built with ❤
+</footer>
+
+</body>
+</html>
